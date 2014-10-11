@@ -217,7 +217,7 @@ CM.LoadConfig = function() {
 				CM.Config[i] = CM.ConfigDefault[i];
 			}
 			else if (i != 'StatsPref' && i != 'Colors') {
-				if (i.indexOf('SoundURL') == -1) {
+				if (i.indexOf('GCSoundURL') == -1) {
 					if (!(CM.Config[i] > -1 && CM.Config[i] < CM.ConfigData[i].label.length)) {
 						mod = true;
 						CM.Config[i] = CM.ConfigDefault[i];
